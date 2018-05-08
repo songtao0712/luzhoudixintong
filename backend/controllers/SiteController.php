@@ -56,7 +56,7 @@ class SiteController extends Controller
 
     public function actionEchostr($str)
     {
-        echo $str;
+        var_dump(time());
         $app = Factory::officialAccount($this->config);
 
         $response = $app->server->serve();
