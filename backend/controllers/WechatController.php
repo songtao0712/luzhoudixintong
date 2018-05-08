@@ -15,7 +15,8 @@ class WechatController extends Controller
 
     public function actionIndex()
     {
-        $config = [
+        echo $_GET['echostr'];
+        /*$config = [
             'app_id'=>'wxbbd06c6491fa437c',
             'secret'=>'c86f519a83d31e1ded005799b5625872',
             'response_type'=>'array',
@@ -26,6 +27,6 @@ class WechatController extends Controller
         ];
         $app = Factory::officialAccount($config);
         $response = $app->server->serve();
-        $response->send();
+        $response->send();*/
     }
 }
