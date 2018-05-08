@@ -54,8 +54,9 @@ class SiteController extends Controller
         ];
     }*/
 
-    public function actionEchostr()
+    public function actionEchostr($str)
     {
+        echo $str;
         $app = Factory::officialAccount($this->config);
 
         $response = $app->server->serve();
