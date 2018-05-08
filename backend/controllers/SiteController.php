@@ -61,4 +61,9 @@ class SiteController extends Controller
         $response->send();
     }
 
+    public function actionTest(){
+        echo 123;
+    }
+
+
 }
