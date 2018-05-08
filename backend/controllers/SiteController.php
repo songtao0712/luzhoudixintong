@@ -54,9 +54,8 @@ class SiteController extends Controller
         ];
     }*/
 
-    public function actionEchostr($str)
+    public function actionIndex($str)
     {
-        var_dump(time());
         $app = Factory::officialAccount($this->config);
 
         $response = $app->server->serve();
