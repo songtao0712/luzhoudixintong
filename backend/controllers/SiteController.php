@@ -58,8 +58,8 @@ class SiteController extends Controller
     {
         $app = Factory::officialAccount($this->config);
 
+        var_dump($app);die;
         $response = $app->server->serve();
-        var_dump($response);die;
         // 将响应输出
         $response->send();
     }
