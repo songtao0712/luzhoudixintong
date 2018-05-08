@@ -57,7 +57,10 @@ class SiteController extends Controller
     public function actionEchostr()
     {
         $app = Factory::officialAccount($this->config);
-        $response = $app->server->sever();
+
+        $response = $app->server->serve();
+
+        // 将响应输出
         $response->send();
     }
 
