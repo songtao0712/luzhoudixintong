@@ -54,14 +54,15 @@ class SiteController extends Controller
         ];
     }*/
 
-    public function actionIndex($str)
+    public function actionIndex()
     {
-        $app = Factory::officialAccount($this->config);
+        var_dump($this->config);
+        /*$app = Factory::officialAccount($this->config);
 
         $response = $app->server->serve();
 
         // 将响应输出
-        $response->send();
+        $response->send();*/
     }
 
     public function actionTest(){
