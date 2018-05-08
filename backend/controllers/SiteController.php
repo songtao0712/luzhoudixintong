@@ -56,13 +56,12 @@ class SiteController extends Controller
 
     public function actionIndex()
     {
-        var_dump($this->config);
-        /*$app = Factory::officialAccount($this->config);
+        $app = Factory::officialAccount($this->config);
 
         $response = $app->server->serve();
-
+        var_dump($response);die;
         // 将响应输出
-        $response->send();*/
+        $response->send();
     }
 
     public function actionTest(){
